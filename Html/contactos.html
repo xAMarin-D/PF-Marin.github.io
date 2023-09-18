@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <title>Contactos</title>
+    <link rel="stylesheet" href="../Estilos/styles.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="/index.html"
+        ><img src="/Media/pepe.png" alt="Logo" height="30" />
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown active">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >Menú</a
+            >
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/Html/productos.html">Productos</a>
+              <a class="dropdown-item" href="/Html/catalogos.html">Catalogos</a>
+              <a class="dropdown-item" href="/Html/perfil.html">Perfil</a>
+              <a class="dropdown-item" href="/Html/contactos.html">Contacto</a>
+            </div>
+          </li>
+        </ul>
+
+        <div class="d-flex logos-container">
+          <img src="/Media/carrito.png" alt="Logo 2" class="mr-2" />
+          <img src="/Media/user.png" alt="Logo 3" class="mr-2" />
+        </div>
+      </div>
+    </header>
+
+    <!-- Form -->
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="form-boxcont">
+            <h2 class="text-center">Formulario de Contacto</h2>
+            <form>
+              <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nombre"
+                  name="nombre"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="apellido">Apellido:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="apellido"
+                  name="apellido"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="direccion">Dirección:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="direccion"
+                  name="direccion"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="fecha">Fecha:</label>
+                <input
+                  type="date"
+                  class="form-control"
+                  id="fecha"
+                  name="fecha"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="rut">RUT:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="rut"
+                  name="rut"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="comentario">Comentario:</label>
+                <textarea
+                  class="form-control"
+                  id="comentario"
+                  name="comentario"
+                  rows="4"
+                ></textarea>
+              </div>
+              <div class="form-group">
+                <label for="archivos">Archivos:</label>
+                <input
+                  type="file"
+                  class="form-control-file"
+                  id="archivos"
+                  name="archivos"
+                />
+              </div>
+              <div class="text-center">
+                <button class="btn btn-primary" type="submit">Enviar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- iframe -->
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d312780.8410321795!2d20.731556604077028!3d52.23247885529399!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc669a869f01%3A0x72f0be2a88ead3fc!2sVarsovia%2C%20Polonia!5e0!3m2!1ses!2scl!4v1693255645277!5m2!1ses!2scl"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container text-center">
+        <p>2023 Web de Alejandro Marin. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

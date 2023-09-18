@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <title>Perfil</title>
+    <link rel="stylesheet" href="../Estilos/styles.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="/index.html"
+        ><img src="/Media/pepe.png" alt="Logo" height="30" />
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown active">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >Menú</a
+            >
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/Html/productos.html">Productos</a>
+              <a class="dropdown-item" href="/Html/catalogos.html">Catalogos</a>
+              <a class="dropdown-item" href="/Html/perfil.html">Perfil</a>
+              <a class="dropdown-item" href="/Html/contactos.html">Contacto</a>
+            </div>
+          </li>
+        </ul>
+
+        <div class="d-flex logos-container">
+          <img src="/Media/carrito.png" alt="Logo 2" class="mr-2" />
+          <img src="/Media/user.png" alt="Logo 3" class="mr-2" />
+        </div>
+      </div>
+    </header>
+
+    <div class="container-fluid">
+      <div class="row justify-content-end">
+        <div class="col-md-3">
+          <div class="perfil-box">
+            <div class="circle-outer">
+              <div class="circle-inner">
+                <div class="circle-img">
+                  <img src="/Media/pepe.png" alt="Imagen de perfil" />
+                </div>
+              </div>
+            </div>
+            <h5 class="perfil-name text-center">Nombre de Usuario</h5>
+          </div>
+        </div>
+
+        <div class="col-md-9"></div>
+      </div>
+    </div>
+
+    <!-- Body form & sidebar -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-3 bg-light">
+          <h4>Opciones</h4>
+        </div>
+
+        <div class="col-md-9">
+          <div
+            class="formulario-box mt-4 p-4 rounded bg-light mx-auto text-center"
+          >
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <h2 class="mb-0">Perfil</h2>
+              <button type="button" class="btn btn-link">
+                <i class="fas fa-edit"></i>
+              </button>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="nombre">Nombre</label>
+                <input type="text" class="form-control" id="nombre" required />
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="apellido">Apellido</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="apellido"
+                  required
+                />
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" required />
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="telefono">Teléfono</label>
+                <input type="tel" class="form-control" id="telefono" required />
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="direccion">Dirección</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="direccion"
+                  required
+                />
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="ciudad">Ciudad</label>
+                <input type="text" class="form-control" id="ciudad" required />
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="pais">País</label>
+                <input type="text" class="form-control" id="pais" required />
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="codigo_postal">Código Postal</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="codigo_postal"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container text-center">
+        <p>2023 Web de Alejandro Marin. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
