@@ -12,25 +12,23 @@ body, html {
 
 /*Navbar*/
 .navbar {
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navbar-brand {
     margin-right: 0;
 }
 
-.form-inline {
-    flex: 1;
-    justify-content: center;
-}
-
-.form-inline .form-control {
-    width: auto; 
-    margin: 0; 
-}
 
 .navbar-nav {
-    margin-right: auto; 
+  margin: 0;
+  
+}
+
+.navbar-nav .nav-link {
+  font-size: 90%; 
 }
 
 .nav-item.dropdown.active .nav-link {
@@ -39,10 +37,12 @@ body, html {
 
 .dropdown-menu {
     min-width: auto !important; 
+    
 }
 
 .dropdown-menu .dropdown-item {
     color: #007bff;
+    
 }
 
 .logos-container img {
@@ -354,4 +354,71 @@ body, html {
   }
   
   
+  /*Circle imagen*/
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(180deg);
+    }
+  }
+
+  .circle-img img {
+    transition: transform 0.3s; 
+  }
+
+  .circle-img:hover img {
+    transform: scale(1.2); 
+  }
+
+
+/*Clown animation*/
+
+.circle-imgC img {
+  width: 80px;
+  border-radius: 50%;
+}
+
+.circle-imgC img {
+  transition: transform 0.3s; 
+}
+
+.circle-imgC:hover img {
+  transform: rotate(360deg);
+}
+
+/*Circle products*/
+.card {
+  transition: transform 0.3s; 
+}
+
+.card:hover {
+  transform: scale(1.05); 
+}
+
+/*Perso Menu*/
+
+.custom-search {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 18%;
   
+}
+.custom-search .form-control {
+  width: 60%;
+  margin-right: 20px;
+}
+
+
+.custom-form.hidden {
+  display: none;
+}
+
+
+
+.img-logo {
+  height: 50px;
+}
