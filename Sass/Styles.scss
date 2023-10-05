@@ -1,0 +1,410 @@
+.form-container {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    margin-right: 20px;
+  
+    h2 {
+      margin-top: 20px;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+  
+    &.left-column, &.right-column {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      margin-left: 30px;
+    }
+  
+    &.form-field {
+      margin-bottom: 10px;
+      margin-top: 40px;
+    }
+  
+    label {
+      font-weight: bold;
+    }
+  
+    .input-contact {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      width: 10%;
+      box-sizing: border-box;
+      height: 30px;
+      font-size: 16px;
+    }
+  }
+
+
+  .map {
+    text-align: center;
+    margin: 20px ;
+    }
+  
+   .map iframe {
+      max-width: 100%;
+    }
+  
+
+
+  body, html {
+    height: 100%;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /*Navbar*/
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    &-brand {
+      margin-right: 0;
+    }
+  
+    &-nav {
+      margin: 0;
+  
+      .nav-link {
+        font-size: 90%; 
+      }
+  
+      .nav-item.dropdown.active .nav-link {
+        color: #007bff !important; 
+      }
+  
+      .dropdown-menu {
+        min-width: auto !important; 
+  
+        .dropdown-item {
+          color: #007bff;
+        }
+      }
+  
+      .logos-container {
+        img {
+          margin-right: 20px; 
+          height: 30px; 
+        }
+      }
+    }
+  }
+  
+  /*Carrousel*/
+  .carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 15;
+    width: auto;
+  }
+  
+  .carousel-control-prev, .carousel-control-next {
+    width: 5%;
+  }
+  
+  .carousel {
+    margin: 0; 
+  }
+  
+  .carousel-inner {
+    margin: 0; 
+    padding: 0; 
+  }
+  
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: #007bff;
+  }
+  
+  .carousel-control-prev-icon:before, .carousel-control-next-icon:before {
+    content: '\2039';
+    color: white;
+  }
+  
+  .carousel-control-next-icon:before {
+    content: '\203A';
+  }
+  
+  .carousel-item img {
+    max-height: 100%;
+    width: auto;
+    margin: 0 auto;
+    display: block;
+    border: none;
+  }
+  
+  /*Topbar*/
+  .topbar {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    margin: 3% 0; 
+    padding: 15px; 
+    width: 100%; 
+  }
+  
+  /*Circulo topbar*/
+  .circle {
+    background-color: #f0c14b;
+    border-radius: 50%;
+    width: 60px; 
+    height: 60px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px; 
+  
+    img {
+      max-width: 100%; 
+      max-height: 100%; 
+      border-radius: 50%;
+    }
+  }
+  
+  /*Titulo index*/
+  .title {
+    text-align: center;
+    margin: 30px 0;
+  
+    h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+  
+    &-line {
+      width: 600px;
+      height: 3px;
+      background-color: #f0c14b;
+      margin: 0 auto;
+    }
+  }
+  
+  /*Footer (Todos)*/
+  .footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+  }
+  
+  /*Catalogo Circulo*/
+  .circle-outer {
+    width: 150px;
+    height: 150px;
+    background-color: #f0c14b;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  
+    &-inner {
+      width: 120px;
+      height: 120px;
+      background-color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  
+      .circle-img {
+        img {
+          width: 80px;
+          border-radius: 50%;
+        }
+      }
+  
+      &-title {
+        text-align: center;
+        margin-top: 10px;
+  
+        &-text {
+          font-size: 1.2rem;
+          margin-bottom: 5px;
+        }
+  
+        &-text {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+  
+  /*Boton comprar index*/
+  .btn-comprar {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+    color: #fff;
+    width: 100%; 
+    background-color: #f0c14b; 
+  }
+  
+  /*Map*/
+  
+  /*Perfil*/
+  .formulario-box {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  
+    h2 {
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+    }
+  
+    button {
+      font-size: 24px;
+      color: #333;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      cursor: pointer;
+    }
+  
+    button:hover {
+      color: #f0c14b;
+    }
+  }
+  
+  /*Form contacto*/
+  .form-containercont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .form-boxcont {
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  
+    &-fieldcont {
+      margin-bottom: 20px;
+    }
+  
+    &-labelcont {
+      font-weight: bold;
+    }
+  
+    input[type="text"],
+    input[type="date"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+  
+    input[type="file"] {
+      margin-top: 10px;
+    }
+  
+    &-submit-buttoncont {
+      background-color: #f0c14b;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      color: white;
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
+  /*FORM PERFIL*/
+  
+  /*Circle imagen*/
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(180deg);
+    }
+  }
+  
+  .circle-img img {
+    transition: transform 0.3s; 
+  }
+  
+  .circle-img:hover img {
+    transform: scale(1.2); 
+  }
+  
+  /*Clown animation*/
+  
+  .circle-imgC img {
+    width: 80px;
+    border-radius: 50%;
+  }
+  
+  .circle-imgC img {
+    transition: transform 0.3s; 
+  }
+  
+  .circle-imgC:hover img {
+    transform: rotate(360deg);
+  }
+  
+  /*Circle products*/
+  .card {
+    transition: transform 0.3s; 
+  }
+  
+  .card:hover {
+    transform: scale(1.05); 
+  }
+  
+  /*Perso Menu*/
+  
+  .custom-search {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 18%;
+  }
+  
+  .custom-search .form-control {
+    width: 60%;
+    margin-right: 20px;
+  }
+  
+  .custom-form.hidden {
+    display: none;
+  }
+  
+  .img-logo {
+    height: 50px;
+  }
