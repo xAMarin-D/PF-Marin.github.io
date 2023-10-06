@@ -172,6 +172,7 @@ body, html {
     padding: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
+
 }
 
 .formulario-box h2 {
@@ -206,10 +207,12 @@ body, html {
     border: 2px solid #333;
     border-radius: 10px;
     padding: 20px;
-    width: 400px;
-    margin: 0 auto;
     margin-top: 100px;
     margin-bottom: 100px;
+    max-width: 600px; 
+    width: 100%; 
+    margin-left: auto;
+    margin-right: auto;
   }
   
   .form-boxcont h2 {
@@ -228,14 +231,24 @@ body, html {
   input[type="text"],
   input[type="date"],
   textarea {
-    width: 100%;
+    width: calc(100% - 20px);
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-  }
-  
-  input[type="file"] {
     margin-top: 10px;
+  }
+    .file-input-label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  input[type="file"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box; 
   }
   
   .submit-buttoncont {
@@ -245,7 +258,7 @@ body, html {
     border-radius: 5px;
     cursor: pointer;
     color: white;
-    width: 100%;
+    width: calc(100% - 20px);
     text-align: center;
   }
 
