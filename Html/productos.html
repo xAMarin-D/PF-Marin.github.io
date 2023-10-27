@@ -114,21 +114,31 @@
         <div class="col-md-10">
           <div class="topbar">
             <div class="d-flex justify-content-between tbmargin">
-              <div class="circle">
-                <img src="../Media/moda.png" alt="Imagen 1" />
-              </div>
-              <div class="circle">
-                <img src="../Media/auto.png" alt="Imagen 2" />
-              </div>
-              <div class="circle">
-                <img src="../Media/hogar.png" alt="Imagen 3" />
-              </div>
-              <div class="circle">
-                <img src="../Media/zapatos.png" alt="Imagen 4" />
-              </div>
-              <div class="circle">
-                <img src="../Media/belleza.png" alt="Imagen 5" />
-              </div>
+              <a href="productos.html">
+                <div class="circle">
+                  <img src="../Media/moda.png" alt="Imagen 1" />
+                </div>
+              </a>
+              <a href="productosAuto.html">
+                <div class="circle">
+                  <img src="../Media/auto.png" alt="Imagen 2" />
+                </div>
+              </a>
+              <a href="productosCasa.html">
+                <div class="circle">
+                  <img src="../Media/hogar.png" alt="Imagen 3" />
+                </div>
+              </a>
+              <a href="productosZapatos.html">
+                <div class="circle">
+                  <img src="../Media/zapatos.png" alt="Imagen 4" />
+                </div>
+              </a>
+              <a href="productosBelleza.html">
+                <div class="circle">
+                  <img src="../Media/belleza.png" alt="Imagen 5" />
+                </div>
+              </a>
             </div>
           </div>
         </div>
@@ -141,8 +151,89 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-2 bg-light">
-          <!-- Filter Elements -->
           <h4>Filtros</h4>
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary btn-block dropdown-toggle mt-2 boton-pequeno"
+              type="button"
+              id="dropdownTalla"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Marca
+            </button>
+            <ul
+              class="dropdown-menu boton-pequeno"
+              aria-labelledby="dropdownTalla"
+            >
+              <li><a class="dropdown-item" href="#">ZIOL</a></li>
+              <li><a class="dropdown-item" href="#">MAGALLANES</a></li>
+              <li><a class="dropdown-item" href="#">RIP&DIP</a></li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary btn-block dropdown-toggle mt-2 boton-pequeno"
+              type="button"
+              id="dropdownTalla"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Descuentos
+            </button>
+            <ul
+              class="dropdown-menu boton-pequeno"
+              aria-labelledby="dropdownTalla"
+            >
+              <li><a class="dropdown-item" href="#">10%</a></li>
+              <li><a class="dropdown-item" href="#">25%</a></li>
+              <li><a class="dropdown-item" href="#">50%</a></li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary btn-block dropdown-toggle mt-2 boton-pequeno"
+              type="button"
+              id="dropdownTalla"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Color
+            </button>
+            <ul
+              class="dropdown-menu boton-pequeno"
+              aria-labelledby="dropdownTalla"
+            >
+              <li><a class="dropdown-item" href="#">Negro</a></li>
+              <li><a class="dropdown-item" href="#">Rojo</a></li>
+              <li><a class="dropdown-item" href="#">Azul</a></li>
+              <li><a class="dropdown-item" href="#">Otro</a></li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary btn-block dropdown-toggle mt-2 boton-pequeno"
+              type="button"
+              id="dropdownTalla"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Calificación
+            </button>
+            <ul
+              class="dropdown-menu boton-pequeno"
+              aria-labelledby="dropdownTalla"
+            >
+              <li><a class="dropdown-item" href="#">⭐</a></li>
+              <li><a class="dropdown-item" href="#">⭐⭐</a></li>
+              <li><a class="dropdown-item" href="#">⭐⭐⭐</a></li>
+              <li><a class="dropdown-item" href="#">⭐⭐⭐⭐</a></li>
+              <li><a class="dropdown-item" href="#">⭐⭐⭐⭐⭐</a></li>
+            </ul>
+          </div>
+          <button class="btn btn-primary btn-block mt-2 boton-pequeno">
+            Aplicar
+          </button>
         </div>
 
         <div class="col-md-10">
@@ -150,25 +241,25 @@
             <div class="col-md-3 mb-4">
               <div class="card">
                 <img
-                  src="/Media/polera.png"
+                  src="https://i.pinimg.com/564x/e3/c8/e6/e3c8e6fae966d2b10596934594a23041.jpg"
                   class="card-img-top"
                   alt="Producto 1"
                 />
                 <div class="card-body">
-                  <h5 class="card-title">Polera Kimetsu</h5>
-                  <p class="card-text">$15.000 CLP</p>
+                  <h5 class="card-title">Chaqueta Cuero</h5>
+                  <p class="card-text">$153.000 CLP</p>
                 </div>
               </div>
             </div>
             <div class="col-md-3 mb-4">
               <div class="card">
                 <img
-                  src="/Media/polera.png"
+                  src="data:image/jpeg;base64,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"
                   class="card-img-top"
                   alt="Producto 2"
                 />
                 <div class="card-body">
-                  <h5 class="card-title">Polera Kimetsu</h5>
+                  <h5 class="card-title">Lentes de Sol</h5>
                   <p class="card-text">$15.000 CLP</p>
                 </div>
               </div>
@@ -176,12 +267,12 @@
             <div class="col-md-3 mb-4">
               <div class="card">
                 <img
-                  src="/Media/polera.png"
+                  src="https://www.madridcapitaldemoda.com/wp-content/uploads/2022/01/Tria%CC%81ngulo-de-la-Moda-Galeri%CC%81a.png"
                   class="card-img-top"
                   alt="Producto 3"
                 />
                 <div class="card-body">
-                  <h5 class="card-title">Polera Kimetsu</h5>
+                  <h5 class="card-title">Cortaviento Gris</h5>
                   <p class="card-text">$15.000 CLP</p>
                 </div>
               </div>
@@ -189,12 +280,12 @@
             <div class="col-md-3 mb-4">
               <div class="card">
                 <img
-                  src="/Media/polera.png"
+                  src="data:image/jpeg;base64,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"
                   class="card-img-top"
                   alt="Producto 4"
                 />
                 <div class="card-body">
-                  <h5 class="card-title">Polera Kimetsu</h5>
+                  <h5 class="card-title">Cartera Mujer</h5>
                   <p class="card-text">$15.000 CLP</p>
                 </div>
               </div>
@@ -205,12 +296,12 @@
             <div class="col-md-3 mb-4">
               <div class="card">
                 <img
-                  src="/Media/poleron.png"
+                  src="https://i.pinimg.com/564x/f9/07/bf/f907bf8a3cb40354e8e9ee3c171a545f--mens-fashion-styles-fashion-mode.jpg"
                   class="card-img-top"
                   alt="Producto 1"
                 />
                 <div class="card-body">
-                  <h5 class="card-title">Poleron Chainsaw</h5>
+                  <h5 class="card-title">Gabardina Hombre</h5>
                   <p class="card-text">$15.000 CLP</p>
                 </div>
               </div>
@@ -218,12 +309,12 @@
             <div class="col-md-3 mb-4">
               <div class="card">
                 <img
-                  src="/Media/poleron.png"
+                  src="https://i.pinimg.com/1200x/13/d9/d1/13d9d1e0739812f9ff081626f8056964.jpg"
                   class="card-img-top"
                   alt="Producto 2"
                 />
                 <div class="card-body">
-                  <h5 class="card-title">Poleron Chainsaw</h5>
+                  <h5 class="card-title">Jeans Hombre</h5>
                   <p class="card-text">$15.000 CLP</p>
                 </div>
               </div>
@@ -231,26 +322,26 @@
             <div class="col-md-3 mb-4">
               <div class="card">
                 <img
-                  src="/Media/poleron.png"
+                  src="https://m.media-amazon.com/images/I/31Zs3ujZbFL._AC_.jpg"
                   class="card-img-top"
                   alt="Producto 3"
                 />
                 <div class="card-body">
-                  <h5 class="card-title">Poleron Chainsaw</h5>
-                  <p class="card-text">$15.000 CLP</p>
+                  <h5 class="card-title">Chaleco Hombre</h5>
+                  <p class="card-text">$13.000 CLP</p>
                 </div>
               </div>
             </div>
             <div class="col-md-3 mb-4">
               <div class="card">
                 <img
-                  src="/Media/poleron.png"
+                  src="https://sladom.com.mx/wp-content/uploads/2022/06/1089640948-535502639-500x500.jpg"
                   class="card-img-top"
                   alt="Producto 4"
                 />
                 <div class="card-body">
-                  <h5 class="card-title">Poleron Chainsaw</h5>
-                  <p class="card-text">$15.000 CLP</p>
+                  <h5 class="card-title">Polera Corta</h5>
+                  <p class="card-text">$5.000 CLP</p>
                 </div>
               </div>
             </div>
@@ -260,38 +351,38 @@
             <div class="col-md-3 mb-4">
               <div class="card">
                 <img
-                  src="/Media/polera.png"
+                  src="https://timeforfashion.files.wordpress.com/2010/06/62010greentop_4052web.jpg?w=584"
                   class="card-img-top"
                   alt="Producto 1"
                 />
                 <div class="card-body">
-                  <h5 class="card-title">Polera Kimetsu</h5>
-                  <p class="card-text">$15.000 CLP</p>
+                  <h5 class="card-title">Polera Verde</h5>
+                  <p class="card-text">$18.000 CLP</p>
                 </div>
               </div>
             </div>
             <div class="col-md-3 mb-4">
               <div class="card">
                 <img
-                  src="/Media/polera.png"
+                  src="https://d3fvqmu2193zmz.cloudfront.net/items_2/uid_commerces.1/uid_items_2.FD2IKDQK59XO/500x500/6374FC8A53F5D.jpg"
                   class="card-img-top"
                   alt="Producto 2"
                 />
                 <div class="card-body">
-                  <h5 class="card-title">Polera Kimetsu</h5>
-                  <p class="card-text">$15.000 CLP</p>
+                  <h5 class="card-title">Poleron Mickey</h5>
+                  <p class="card-text">$45.000 CLP</p>
                 </div>
               </div>
             </div>
             <div class="col-md-3 mb-4">
               <div class="card">
                 <img
-                  src="/Media/polera.png"
+                  src="https://http2.mlstatic.com/D_NQ_NP_601208-MLC44351092895_122020-O.webp"
                   class="card-img-top"
                   alt="Producto 3"
                 />
                 <div class="card-body">
-                  <h5 class="card-title">Polera Kimetsu</h5>
+                  <h5 class="card-title">Chaqueta Hombre</h5>
                   <p class="card-text">$15.000 CLP</p>
                 </div>
               </div>
@@ -299,13 +390,13 @@
             <div class="col-md-3 mb-4">
               <div class="card">
                 <img
-                  src="/Media/polera.png"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTUsbJJ-ere0Lqq60Wb-6jZ9eTINHdGDcRJA&usqp=CAU"
                   class="card-img-top"
                   alt="Producto 4"
                 />
                 <div class="card-body">
-                  <h5 class="card-title">Polera Kimetsu</h5>
-                  <p class="card-text">$15.000 CLP</p>
+                  <h5 class="card-title">Gabardina Cafe</h5>
+                  <p class="card-text">$153.000 CLP</p>
                 </div>
               </div>
             </div>
@@ -315,25 +406,25 @@
             <div class="col-md-3 mb-4">
               <div class="card">
                 <img
-                  src="/Media/poleron.png"
+                  src="https://i.pinimg.com/564x/3b/01/b5/3b01b562c23c34035be877c501eccd13.jpg"
                   class="card-img-top"
                   alt="Producto 1"
                 />
                 <div class="card-body">
-                  <h5 class="card-title">Poleron Chainsaw</h5>
-                  <p class="card-text">$15.000 CLP</p>
+                  <h5 class="card-title">Jeans Negro</h5>
+                  <p class="card-text">$55.000 CLP</p>
                 </div>
               </div>
             </div>
             <div class="col-md-3 mb-4">
               <div class="card">
                 <img
-                  src="/Media/poleron.png"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmIi7KMzwPuyxn7IkhbRaqLponQdjzfnidmA&usqp=CAU"
                   class="card-img-top"
                   alt="Producto 2"
                 />
                 <div class="card-body">
-                  <h5 class="card-title">Poleron Chainsaw</h5>
+                  <h5 class="card-title">Poleron Harley</h5>
                   <p class="card-text">$15.000 CLP</p>
                 </div>
               </div>
@@ -341,12 +432,12 @@
             <div class="col-md-3 mb-4">
               <div class="card">
                 <img
-                  src="/Media/poleron.png"
+                  src="https://asicscl.vteximg.com.br/arquivos/ids/267713-500-500/2041A247_100_GM_FT_GLB-1.jpg?v=638140476638130000"
                   class="card-img-top"
                   alt="Producto 3"
                 />
                 <div class="card-body">
-                  <h5 class="card-title">Poleron Chainsaw</h5>
+                  <h5 class="card-title">Short Deportivo</h5>
                   <p class="card-text">$15.000 CLP</p>
                 </div>
               </div>
@@ -354,12 +445,12 @@
             <div class="col-md-3 mb-4">
               <div class="card">
                 <img
-                  src="/Media/poleron.png"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkjPijj6BpI6P5trbm66mtnRjCwFrNknWDsQ&usqp=CAU"
                   class="card-img-top"
                   alt="Producto 4"
                 />
                 <div class="card-body">
-                  <h5 class="card-title">Poleron Chainsaw</h5>
+                  <h5 class="card-title">Polera Jordan</h5>
                   <p class="card-text">$15.000 CLP</p>
                 </div>
               </div>

@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Productos de retail - Retail" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Productos</title>
+    <link rel="stylesheet" href="../Estilos/styles.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/index.html">
+          <img src="/Media/pepe.png" alt="" width="40" height="40" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="/Html/productos.html"
+                >Productos</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="/Html/catalogos.html"
+                >Catalogo</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="/Html/perfil.html"
+                >Perfil</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="/Html/contactos.html"
+                >Contacto</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Busca tu producto.."
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Buscar
+            </button>
+          </form>
+          <ul class="navbar-nav ms-auto d-flex align-items-center">
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <img src="/Media/carrito.png" alt="Carrito" />
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <img src="/Media/close-sesion.png" alt="Cerrar Sesión" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Topbar -->
+    <div class="container-fluid">
+      <div class="row justify-content-end">
+        <div class="col-md-2">
+          <!-- Void -->
+        </div>
+        <div class="col-md-10">
+          <div class="topbar">
+            <div class="d-flex justify-content-between tbmargin">
+              <a href="productos.html">
+                <div class="circle">
+                  <img src="../Media/moda.png" alt="Imagen 1" />
+                </div>
+              </a>
+              <a href="productosAuto.html">
+                <div class="circle">
+                  <img src="../Media/auto.png" alt="Imagen 2" />
+                </div>
+              </a>
+              <a href="productosCasa.html">
+                <div class="circle">
+                  <img src="../Media/hogar.png" alt="Imagen 3" />
+                </div>
+              </a>
+              <a href="productosZapatos.html">
+                <div class="circle">
+                  <img src="../Media/zapatos.png" alt="Imagen 4" />
+                </div>
+              </a>
+              <a href="productosBelleza.html">
+                <div class="circle">
+                  <img src="../Media/belleza.png" alt="Imagen 5" />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product body -->
+
+    <!-- Side bar -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-2 bg-light">
+          <h4>Filtros</h4>
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary btn-block dropdown-toggle mt-2 boton-pequeno"
+              type="button"
+              id="dropdownTalla"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Marca
+            </button>
+            <ul
+              class="dropdown-menu boton-pequeno"
+              aria-labelledby="dropdownTalla"
+            >
+              <li><a class="dropdown-item" href="#">ZIOL</a></li>
+              <li><a class="dropdown-item" href="#">MAGALLANES</a></li>
+              <li><a class="dropdown-item" href="#">RIP&DIP</a></li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary btn-block dropdown-toggle mt-2 boton-pequeno"
+              type="button"
+              id="dropdownTalla"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Descuentos
+            </button>
+            <ul
+              class="dropdown-menu boton-pequeno"
+              aria-labelledby="dropdownTalla"
+            >
+              <li><a class="dropdown-item" href="#">10%</a></li>
+              <li><a class="dropdown-item" href="#">25%</a></li>
+              <li><a class="dropdown-item" href="#">50%</a></li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary btn-block dropdown-toggle mt-2 boton-pequeno"
+              type="button"
+              id="dropdownTalla"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Color
+            </button>
+            <ul
+              class="dropdown-menu boton-pequeno"
+              aria-labelledby="dropdownTalla"
+            >
+              <li><a class="dropdown-item" href="#">Negro</a></li>
+              <li><a class="dropdown-item" href="#">Rojo</a></li>
+              <li><a class="dropdown-item" href="#">Azul</a></li>
+              <li><a class="dropdown-item" href="#">Otro</a></li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary btn-block dropdown-toggle mt-2 boton-pequeno"
+              type="button"
+              id="dropdownTalla"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Calificación
+            </button>
+            <ul
+              class="dropdown-menu boton-pequeno"
+              aria-labelledby="dropdownTalla"
+            >
+              <li><a class="dropdown-item" href="#">⭐</a></li>
+              <li><a class="dropdown-item" href="#">⭐⭐</a></li>
+              <li><a class="dropdown-item" href="#">⭐⭐⭐</a></li>
+              <li><a class="dropdown-item" href="#">⭐⭐⭐⭐</a></li>
+              <li><a class="dropdown-item" href="#">⭐⭐⭐⭐⭐</a></li>
+            </ul>
+          </div>
+          <button class="btn btn-primary btn-block mt-2 boton-pequeno">
+            Aplicar
+          </button>
+        </div>
+
+        <div class="col-md-10">
+          <div class="row">
+            <div class="col-md-3 mb-4">
+              <div class="card">
+                <img
+                  src="https://images-na.ssl-images-amazon.com/images/I/41E985fb9jL.jpg"
+                  class="card-img-top"
+                  alt="Producto 1"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Lavaplato</h5>
+                  <p class="card-text">$15.000 CLP</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 mb-4">
+              <div class="card">
+                <img
+                  src="data:image/jpeg;base64,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"
+                  class="card-img-top"
+                  alt="Producto 2"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Luz Interior</h5>
+                  <p class="card-text">$15.000 CLP</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 mb-4">
+              <div class="card">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt1YhtVte5l63UtN6COHoM-wCPAt78AMoSeQuYsgg7M_iKm9WUMcLjYEx0yKO7Fa4OPg0&usqp=CAU"
+                  class="card-img-top"
+                  alt="Producto 3"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Especiero</h5>
+                  <p class="card-text">$15.000 CLP</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 mb-4">
+              <div class="card">
+                <img
+                  src="https://images.hola.com/imagenes/seleccion/20200911175087/decoracion-casa-nuevas-tecnologias/0-864-165/westwing-m.jpg?tx=w_500"
+                  class="card-img-top"
+                  alt="Producto 4"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Decoración</h5>
+                  <p class="card-text">$15.000 CLP</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-3 mb-4">
+              <div class="card">
+                <img
+                  src="https://http2.mlstatic.com/D_NQ_NP_807602-MLC49474921753_032022-O.webp"
+                  class="card-img-top"
+                  alt="Producto 1"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Plumon Cama</h5>
+                  <p class="card-text">$15.000 CLP</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 mb-4">
+              <div class="card">
+                <img
+                  src="https://i.pinimg.com/1200x/73/f8/6d/73f86dc02e102dc14c84f41d650f9da0.jpg"
+                  class="card-img-top"
+                  alt="Producto 2"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Decoración</h5>
+                  <p class="card-text">$15.000 CLP</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 mb-4">
+              <div class="card">
+                <img
+                  src="https://images-na.ssl-images-amazon.com/images/I/51jOn1DILSL.jpg"
+                  class="card-img-top"
+                  alt="Producto 3"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Luz Interior</h5>
+                  <p class="card-text">$15.000 CLP</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 mb-4">
+              <div class="card">
+                <img
+                  src="https://headless.casaideas.cl/media/catalog/product/3/2/3219845000060_2_1.jpg?optimize=low&bg-color=255,255,255&fit=bounds&height=&width=?auto=webp&format=pjpg&width=500"
+                  class="card-img-top"
+                  alt="Producto 4"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Delantal</h5>
+                  <p class="card-text">$15.000 CLP</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-3 mb-4">
+              <div class="card">
+                <img
+                  src="https://m.media-amazon.com/images/I/41mcjOTixBL.jpg"
+                  class="card-img-top"
+                  alt="Producto 1"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Decoración</h5>
+                  <p class="card-text">$15.000 CLP</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 mb-4">
+              <div class="card">
+                <img
+                  src="https://i.pinimg.com/564x/d8/de/81/d8de81efe58da29697f81b1e95217d52.jpg"
+                  class="card-img-top"
+                  alt="Producto 2"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Decoración</h5>
+                  <p class="card-text">$15.000 CLP</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 mb-4">
+              <div class="card">
+                <img
+                  src="https://http2.mlstatic.com/D_NQ_NP_676100-MLC48076076015_102021-O.webp"
+                  class="card-img-top"
+                  alt="Producto 3"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Gancho Escoba</h5>
+                  <p class="card-text">$15.000 CLP</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 mb-4">
+              <div class="card">
+                <img
+                  src="https://images.hola.com/imagenes/seleccion/20200417165788/decoracion-casa-videollamadas/0-812-161/videollamada-1m-m.jpg?tx=w_500"
+                  class="card-img-top"
+                  alt="Producto 4"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Escritorio</h5>
+                  <p class="card-text">$15.000 CLP</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-3 mb-4">
+              <div class="card">
+                <img
+                  src="https://i.pinimg.com/564x/ac/d8/b3/acd8b3a639d4acda18b67d28ec91c1cd.jpg"
+                  class="card-img-top"
+                  alt="Producto 1"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Basurero</h5>
+                  <p class="card-text">$15.000 CLP</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 mb-4">
+              <div class="card">
+                <img
+                  src="https://images-na.ssl-images-amazon.com/images/I/41BZYOtPVuS.jpg"
+                  class="card-img-top"
+                  alt="Producto 2"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Escritorio</h5>
+                  <p class="card-text">$15.000 CLP</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 mb-4">
+              <div class="card">
+                <img
+                  src="https://headless.casaideas.cl/media/catalog/product/3/2/3226645000015_2.jpg?optimize=low&bg-color=255,255,255&fit=bounds&height=&width=?auto=webp&format=pjpg&width=500"
+                  class="card-img-top"
+                  alt="Producto 3"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Mueble WC</h5>
+                  <p class="card-text">$15.000 CLP</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 mb-4">
+              <div class="card">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiwTxFL5UBM5UFbjEYeagNs5LHi1AIGNheGw&usqp=CAU"
+                  class="card-img-top"
+                  alt="Producto 4"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Lampara Interior</h5>
+                  <p class="card-text">$15.000 CLP</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container text-center">
+        <p>2023 Web de Alejandro Marin. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+    <script src="Functions/functions.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+  </body>
+</html>

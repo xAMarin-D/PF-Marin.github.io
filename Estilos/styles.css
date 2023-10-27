@@ -9,7 +9,40 @@ body, html {
   
  }
 
+ .space-bet {
+  margin-top:10%;
+ }
 
+ .boton-pequeno {
+  width: 100%; 
+  margin: 20px auto; 
+  
+}
+.centry{
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 5%;
+}
+
+.centry-map{
+  justify-content: space-between;
+  text-align: center;
+  
+}
+
+
+.centry-form{
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 2%;
+}
+
+.margin-dist{
+  margin-top: 2%;
+}
+.margin-dist3{
+  margin-top: 4%;
+}
 /*Navbar*/
 .navbar {
   display: flex;
@@ -207,8 +240,8 @@ body, html {
     border: 2px solid #333;
     border-radius: 10px;
     padding: 20px;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     max-width: 600px; 
     width: 100%; 
     margin-left: auto;

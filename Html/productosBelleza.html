@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Productos de retail - Retail" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Productos</title>
+    <link rel="stylesheet" href="../Estilos/styles.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/index.html">
+          <img src="/Media/pepe.png" alt="" width="40" height="40" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="/Html/productos.html"
+                >Productos</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="/Html/catalogos.html"
+                >Catalogo</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="/Html/perfil.html"
+                >Perfil</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="/Html/contactos.html"
+                >Contacto</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Busca tu producto.."
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Buscar
+            </button>
+          </form>
+          <ul class="navbar-nav ms-auto d-flex align-items-center">
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <img src="/Media/carrito.png" alt="Carrito" />
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <img src="/Media/close-sesion.png" alt="Cerrar Sesión" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Topbar -->
+    <div class="container-fluid">
+      <div class="row justify-content-end">
+        <div class="col-md-2">
+          <!-- Void -->
+        </div>
+        <div class="col-md-10">
+          <div class="topbar">
+            <div class="d-flex justify-content-between tbmargin">
+              <a href="productos.html">
+                <div class="circle">
+                  <img src="../Media/moda.png" alt="Imagen 1" />
+                </div>
+              </a>
+              <a href="productosAuto.html">
+                <div class="circle">
+                  <img src="../Media/auto.png" alt="Imagen 2" />
+                </div>
+              </a>
+              <a href="productosCasa.html">
+                <div class="circle">
+                  <img src="../Media/hogar.png" alt="Imagen 3" />
+                </div>
+              </a>
+              <a href="productosZapatos.html">
+                <div class="circle">
+                  <img src="../Media/zapatos.png" alt="Imagen 4" />
+                </div>
+              </a>
+              <a href="productosBelleza.html">
+                <div class="circle">
+                  <img src="../Media/belleza.png" alt="Imagen 5" />
+                </div>
+              </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product body -->
+
+    <!-- Side bar -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-2 bg-light">
+          <h4>Filtros</h4>
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary btn-block dropdown-toggle mt-2 boton-pequeno"
+              type="button"
+              id="dropdownTalla"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Marca
+            </button>
+            <ul
+              class="dropdown-menu boton-pequeno"
+              aria-labelledby="dropdownTalla"
+            >
+              <li><a class="dropdown-item" href="#">ZIOL</a></li>
+              <li><a class="dropdown-item" href="#">MAGALLANES</a></li>
+              <li><a class="dropdown-item" href="#">RIP&DIP</a></li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary btn-block dropdown-toggle mt-2 boton-pequeno"
+              type="button"
+              id="dropdownTalla"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Descuentos
+            </button>
+            <ul
+              class="dropdown-menu boton-pequeno"
+              aria-labelledby="dropdownTalla"
+            >
+              <li><a class="dropdown-item" href="#">10%</a></li>
+              <li><a class="dropdown-item" href="#">25%</a></li>
+              <li><a class="dropdown-item" href="#">50%</a></li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary btn-block dropdown-toggle mt-2 boton-pequeno"
+              type="button"
+              id="dropdownTalla"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Color
+            </button>
+            <ul
+              class="dropdown-menu boton-pequeno"
+              aria-labelledby="dropdownTalla"
+            >
+              <li><a class="dropdown-item" href="#">Negro</a></li>
+              <li><a class="dropdown-item" href="#">Rojo</a></li>
+              <li><a class="dropdown-item" href="#">Azul</a></li>
+              <li><a class="dropdown-item" href="#">Otro</a></li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary btn-block dropdown-toggle mt-2 boton-pequeno"
+              type="button"
+              id="dropdownTalla"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Calificación
+            </button>
+            <ul
+              class="dropdown-menu boton-pequeno"
+              aria-labelledby="dropdownTalla"
+            >
+              <li><a class="dropdown-item" href="#">⭐</a></li>
+              <li><a class="dropdown-item" href="#">⭐⭐</a></li>
+              <li><a class="dropdown-item" href="#">⭐⭐⭐</a></li>
+              <li><a class="dropdown-item" href="#">⭐⭐⭐⭐</a></li>
+              <li><a class="dropdown-item" href="#">⭐⭐⭐⭐⭐</a></li>
+            </ul>
+          </div>
+          <button class="btn btn-primary btn-block mt-2 boton-pequeno">
+            Aplicar
+          </button>
+        </div>
+
+        <div class="col-md-10">
+          <div class="row">
+            <div class="col-md-3 mb-4">
+              <div class="card">
+                <img
+                  src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxATEhASERIREhAVEBUQFRIQEBAQEBUSFRUWFxURFRUYHSggGBolGxUVITIhJSkrLi4xFx8zODMtNygtLisBCgoKDg0OGxAQGy0lHyU1LS0tKy0tKy0tLS0rKystLS0rLS8tLS0uLS0tKy0tKy0tLSstLS0tLS0tLSstLS0rLf/AABEIAOEA4QMBIgACEQEDEQH/xAAbAAEAAwEBAQEAAAAAAAAAAAAABAUGAwIBB//EAEoQAAIBAgMDBgoHAwoHAQAAAAABAgMRBBIhBTFRBhMiQXGRIzJSYXOBobGywRQVQmJyotEzkuJUY4KDk6Oz0uHwNENEU2SEwhb/xAAaAQEAAgMBAAAAAAAAAAAAAAAAAQUCAwQG/8QAMREBAAEDAgMFBwMFAAAAAAAAAAECAxEEMQUSIRMUQVFhFSJSgZGh8DKx0UJxweHx/9oADAMBAAIRAxEAPwD9iABizAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABUbRxV5KOqVr3RNnVlGLy07qMeuSW5EZElSXFd4zLiu8zOBndSzU7tu99LRXd8ztXwUpJWw8nHyo1KaT/Jcjm6ZThoMy4rvR9KN0JQ30Wt7zzqQauty1in7SxVVpbs11d9JWv1pcETE5QlKS4rvPp+eU6s6WIVRRULOT0Td098d/Wro2v021SMWnaTyq6V7pN3uurQRInAAkAAAAAAAAAAAAAAAAAAAAAAAADP7f2nL9nT08prr8y8xoDM4qEXd2uyJSmYmWSULyzOcF6k+ov50k4yWZaq1zLYHbCislWOeC3WjBvsdzrU2xTcnl52z0y5mrNr7MU7ERKMSl4GUYwcbPx0rpS3XVzjisVLptQlKySjFuUYvXs038HuPbqZIWzTnfpdJSk07LS7e7Qr8fjqzp2jGV5NQtCbhKKb1nmbW7tua668M6KMvdbaTnieYlSqKm41L1JX5rLlSyyutHrp2FhyYd8HhXKSv9FpRbdldxjbN60kZ7aOIqUnOhKU6tCV4uVRuUlF+d3fX7OotNn839GpRjOslRpKnFQlJTlGKSTdkk3ZC3XnMFdHSEDHQjmtmj1l7tCl4XCyU4vp2smr+K9bGa+vKUZxzTxFRJ3y1GpRb86ZqtmOM4Qm6Sh1xUlFyS6pea5shhhOABkAAAAAAAAAAAAAAAAAAAAAAAABW4rZzd8vc95ZADP09jy1bj7SmxtV06mlNXUr731G5M3yjwVnn6pP2mFUdGVLq8TKpCDp0qk83Bx07SLtFY6HNuOHnUV22qbpScbW1lnlHj1X3MlbHx9GjGmqtSMW1onq/ZuO3KblNgqVOmqldw5xvLKnSr1fFsnd04vJ4yabtu8zNfLTVvV+zPNUbQq8S8XXnLNhq0IKKtzkaSjLzRySlr1krZk6kYyjzFWLV7ReVX9b6vOddjcr9nzTpQruU4RzSzUq9NWulo5xV3d7kT8Hj6NaV6U1Kzaeko6286V95MUUxPSr9kc1Uxsz+zOSs3V53EuNk783DVN77N8DXiwN0RhgAAIAAAAAAAAAAAAAAAAAAAAAA8zmkm3okeig29tzm4z5u3Ri7y6szVkl62Y1VRTGZZU0zVOIR9obem83M3Sjd3S5xvetKcU29U+tLR77NkP6bivGljVFP7MsOoNebW7PSoKlKc6b6ayU4y61HKl7Fe3q4EbG46pKTfOt9sIaeZPr7dCq1OriietSws2Mx0h3VfFO7jj6cl1WjBPs/2jvGliGrynSn96pUSXsgveV6lWySnzjSSv4sdfMQFjK899R28yivkcdXELfnP2bo01XhhcSw7ir1MQrcKUZT9tkvaZ/amIoZmo05SflVK8vgjou8sYUm1aVSo1wc213M5y2Ph27tO/q/Q09+oj9MfVti1P9UqvDY6MZRkqUMy06M3e39LrNZs7E0q2V3qU5rS2k4PttbUpJ7FoLdGXbmSO+BjkklGU4rfpJ2JjXdczH2RVZiY6NJNNXtWy33dGcUuzov3nJutGPSxOvlXcfyuHzOGPxajFNu6avld5MpqmOi90Y/uQ/Q6aeI0/n/XNGmmVriq9ZQk/pzg98Zc1nV+Eo5NV2WY2LtzEQcVi506tGdlHEUoyjlk/FU420T118zKvC7UqQu6bt6kdXDnlnnK8qlCopO2qVm4pa+Uk9OB06fV887/AJ9WNzT8sdY/Po3oIuyr8xQurPmYXV72eVXV+slFtE5V8gACAAAAAAAAAAAAAAAAFbt3EyhC0dHLS/XYxu0NaVT8Lfdr8jV8pF0YdrM9VoXhNcYtew5rzosrDE4VyhOXU8j7k0ygrYaalaxoK+bm42dszSel98eBzk6i+zFvjma+R5nXVxXVEwtNPM0xhW49SUIw9bIcIyVlYu6WdzinTpyTkk3ebsm0mamWw6HkvvSMNNobmpiZomOibmqps4iqN2DUnwPjqS6jefUVDyX3/wCh8ewqHB96XyOr2NqPT6/6afaNrylgHGo+pk7CUXvafrRs1sSj1Zl/S/0OkdlwXXO3nafyM6eEamPL6satfbnaJYuvhs7v6iJPZhvXsejwfqaXyM7UnFOS4Nr2nHqdHd02Jrx18m21qabnSnwZbF0nDQnYODVLNrZYdv1uUY2/MzztN3ZZQywwutsztG3XbRt96R0aCrMzllqJ92Go2X+xo+ih8KJRwwCtSpLhTivyo7nqKdoUlW4ACUAAAAAAAAAAAAAAAAKzbkLqHayndPqL3aq6Me1lTFartOe66Lc9HjFQfNwXng/l8zpGi/tP1I4Yip4Ok/PT+Omvmfa1Y8nqoxMLO3mYw6UtoJThGKt04rva6zYM/L8FiL1qfpY/Ejf7X21Sw7pxmqk6lRyyUqNOVWrJRSc5ZY7oq6u3pqlvaLngc+5X8nHxKiKKqcLAy1flHXjipYfm6eWeK+jUKnhGnNYbnpwq28V6pprelLS61taHKDDyaSlJN4d4pKdOdN82pZXeM0mpXXitXI9flTg4Rwc5Skli1CdLwUm7TVNKpUsugr1Kcbvc5JF6rUevtrEU8VQo1OYUJQpKeS06rq1JVItQi6qlGCyx1yS3y6k2tIUe0OVGCo1a9OrJqth8O8TLwbb5q15Om/tNK10tdSR9fUvpEsMoV5VIuEZyhRnKlF1IqUc1RaLR3AtTCV0809b9OW9X+0+FjYbM2hTrw5ym24c5Up6pxealUlSmrfihIy0sNLNPd48nv+8yh47nlox6/wCFjw+YzVlSYxu+6N3pufX6yTG7ppy18Z+rMn8jrVwnTjd9dzzOyw8X/NRf7yl+hVaPMysL0xy9G0oeLH8K9x0PNPcuxHo9hTsop3AASgAAAAAAAAAAAAAAABC2p4q7SqgtV2r3lrtTxV2lUnqvxL3nPd3b7eysqt5YcLUv8Wnf3nurLf2HyovBQ/oeyVFnyp19h5bXR1hb2Ge2fN8/T9ND40fpG2tjTq1KNejWdDEUo1KcZ83GrCVOrlz05wbV1enBppppx7UfmeAl4en6aHxo/ZGXPBY92v5OPi36qfmzOK5HUa0oTxbji5RwssOpYmhRm88p5nXStaL6rJbusranIfC1Ixp18XVm6eEpbPgqVeWHtGlC8lOMJdOUpRztS8haaXNsQ57JoOSk6ccym6mZXTzt3crp79O5tbmy6VLMbV5KYfFUqka2KjOpVjQjCvDJGSq04TpucbS6XOLnE431WZE6pyTTxzxynRzuVN+EwkKlWKpwUHGnWck4Zlfq6y4p7Hw8VGMaajGLjKKjKaScZSlHr4zk7ecnAUvJ/YtbDOUfpEamHdStVVP6OoTjKtWlVfhM7uk5yW4r5VOlL8UvezVoxc5dKf45fEyh47+mj5rDQRmakfFT1fY37CBjZWoRX83RXsmd8XLSf4JfCyLtXxLeakvyzKzRRnKxu9MN9hH4On+CPwo6nDA/s6Xo4fCjueup2hRzuAAlAAAAAAAAAAAAAAAACFtTxV2lRF6x7UW21n0V2lIpWafDU57u7otbI1T9lHtj76JwrS1Z7rPoxXVePx0v0OFV6nltbVmYW9iFBgX4en6aPxo/VtorFZ/AZMvNS0k0lzr8Rydm8q03H5JQqZailvyzUrcbO9jbrl5f/p/77+EseG6q1Zpq55xnDRxDT3L008kZw0ez1isyVbm3FLVwe95YKy0X2lUl2SSI+Bhjs9PnZRdO0s6jzeZyyxs93i5s9ra2tcpP/wB1/wCP/ffwnmXL1/ydf238BZe09N8X2n+Ff7P1Hw/eF3OG0U9JUWr1G82jV7qlFWjZ20bvwtdnShTxy6U5U5W0yLKsyzy6TlkVnkycFdPTrM6+X7/ky/tv4D6uX7/k6/tv4CfaWn+L7T/B3DUfD94aXZ8cZznhpUnSyy8RPO5Nxy9WiSUu3OuGudqrpT/HL4mWFHlS3Z8yl/WP/KV2a7b4tvvd/mUvFtXavxTFuc4z5uzR2LlqZ54QMXHo1fRz+FnDbmkZP0fwssalK8ai/m5/CyDygjehVf3acl64yNXD4btRLc4L9nT9HD4Udjjgn4Ol6OHwo7Hq42U07gAJQAAAAAAAAAAAAAAAArts+KvWUGIfRl2P3F9trxYlHXjeL7H7jlvbumzsh1b6cM0Ldqc2/cjhNkqt4q9J8mQJy1Z5LVz1hdWlTHA1G30eviiTT2bU83eT6bJMTR2sy3c0qn6rqfd7zzLZdT7veXaDJ55RNcqB7Lq8F3iOzKvBd6L5oDtJRzy80I2SXBE2myNAkw3GuWNT7h30pL7rK7af/B5uNGkv3br5kqlPwnqZGxMb4WC+6u5MsNDV70Q5r9Pi22AfgqXoofCjuRtmPwNH0NP4EST2MbKSQABAAAAAAAAAAAAAAAACt234sSjqSsm2Xm2t0TN7XbVGpbfZfEjmvebpteT5UXR/rH7mVkt77TUVNnuyvpebevBpkR7G67/M8jqaJmpbWrtERuqKaJMUWC2UvK9h1jsl8X3GiLVXg2Teo8ZVh9SLWOy3xv6z19Woz7GryYTfo81RY+xgW31auLPX1dHyvYT2FaO3oVcYnZLQsI4SK6zq8PFrXvRHY1MKtRSoqMfCx9fuOGIllw1N/cXt0+Zcy2e1UhJO6vqQsTg74aCluy2fapae1I7NHRMVx/dF25TVH56tTgV4Ol6OHwo7nLCq0Ka+5FflR1PXRspZ3AASgAAAAAAAAAAAAAAABXbZ8WJntoVLU6jtfo8Lmh2y9IlBUqLXz6Gi63W5dIbcpVJ0s1elCCp5pKfQamtHrLTr95KxG28Il+3Uvwxcr+tKxWzcMt1GOfcqmWKko9aVlpr1kDEYiq/tR4XdOEvkV1ekomcy6Kao6Lilyhwl9M8nxdkv1O/17Ql1P1ymzJvnONJ/+vTOlKflRpt+alCJNNu3T0wzmnPXLT/WVF/Z/wAX9R9Oov7C/dn+pn6VSl9qnF9iivkdHWw3XRXfT/yGXLb8oOWfVd/TaPkNdnOL5npY2jwkvXIofpGF/wCz+eP+Q+fTMMv+RB9uR/8AyR2dufBHverS0cTh5OyqNPhKLt3llToxcdJqXZYwsNq0Yu6oUl2Qhfvsd5csXFWUUl/vgxGntT4MKudrqmD+9bVaLf3lZTSUXCo2oxdm72ir3knfqu1YzUuWLb8W73+NJfM1exoLE0FKqujOTbi7WduHrMrOkpicxDGq5MRiV5StljbdlVuy2h6PkYpJJaJKyXmW5H0tHIAAAAAAAAAAAAAAAAAACr25BtRsUE6TNjOCas9xGez6fB95jNOWUVTDKKFznUoGu+raXB958ezKXB95rm1lnF3DEzoHB0Wbt7Ho8H3nh7Eo8H3mvuzbGpnyYWVMjVbn6C9g0OEu85S5N0H5XeY919WXevR+eSucp3P0Z8mMP97vPEuSmH4z70T3Zj3h+aVLkapTbP1B8kMPxn7DxLkZh39qfsMosYYzefmmGoNySWrb3Lefs2y8LzVGlT8mCT/FvftuQ9l8nsNQeaEbz8qer9XAtjfTTytNVWQAGTEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH//2Q=="
+                  class="card-img-top"
+                  alt="Producto 1"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Perfume Chanel</h5>
+                  <p class="card-text">$15.000 CLP</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 mb-4">
+              <div class="card">
+                <img
+                  src="data:image/jpeg;base64,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"
+                  class="card-img-top"
+                  alt="Producto 2"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Crema Cara</h5>
+                  <p class="card-text">$15.000 CLP</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 mb-4">
+              <div class="card">
+                <img
+                  src="https://dbponline.cl/10272/tinte-natural-colour-100-gr.jpg"
+                  class="card-img-top"
+                  alt="Producto 3"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Tintura de Pelo</h5>
+                  <p class="card-text">$15.000 CLP</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 mb-4">
+              <div class="card">
+                <img
+                  src="data:image/jpeg;base64,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"
+                  class="card-img-top"
+                  alt="Producto 4"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Crema Cara</h5>
+                  <p class="card-text">$15.000 CLP</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-3 mb-4">
+              <div class="card">
+                <img
+                  src="https://i.pinimg.com/736x/9b/10/3c/9b103c350abe2f2b86c3d4a7f4cd85b2.jpg"
+                  class="card-img-top"
+                  alt="Producto 1"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Maquillaje</h5>
+                  <p class="card-text">$15.000 CLP</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 mb-4">
+              <div class="card">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLhFIOR8qbSszON52AzGD3gjvrF35FlyuicZrBqdf_FlX2-8A1WnNajSnWrBOegCQVAV8&usqp=CAU"
+                  class="card-img-top"
+                  alt="Producto 2"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Crema Body</h5>
+                  <p class="card-text">$15.000 CLP</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 mb-4">
+              <div class="card">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj-1Zt4B__T-raASHrfQuMFPLZd_OSoJDkgw&usqp=CAU"
+                  class="card-img-top"
+                  alt="Producto 3"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Perfume de Hombre Hugo</h5>
+                  <p class="card-text">$15.000 CLP</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 mb-4">
+              <div class="card">
+                <img
+                  src="https://i.pinimg.com/564x/d0/b5/76/d0b5766ec1b286be5277b13c48248cb4.jpg"
+                  class="card-img-top"
+                  alt="Producto 4"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Crema de Manos</h5>
+                  <p class="card-text">$15.000 CLP</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-3 mb-4">
+              <div class="card">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhxoMhJe7ieSN8fCVGoOKQHitrowK_dEC4iA&usqp=CAU"
+                  class="card-img-top"
+                  alt="Producto 1"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Vitamina C</h5>
+                  <p class="card-text">$15.000 CLP</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 mb-4">
+              <div class="card">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHquM8ip6U3tOnnNB4Sfuf5SqDWptsO3Y0Lw&usqp=CAU"
+                  class="card-img-top"
+                  alt="Producto 2"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Shampoo</h5>
+                  <p class="card-text">$15.000 CLP</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 mb-4">
+              <div class="card">
+                <img
+                  src="https://minimax-18f3e.kxcdn.com/wp-content/uploads/2022/11/crema-de-masaje-intensiva-babaria-only-curls-1-a2dd31fb-91f2-41ff-bd80-1e1d3ef595f1-500x500.jpg"
+                  class="card-img-top"
+                  alt="Producto 3"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Crema Coco</h5>
+                  <p class="card-text">$15.000 CLP</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 mb-4">
+              <div class="card">
+                <img
+                  src="https://dbponline.cl/10604/pack-fitoxil-caida-champu-300-ml-trat-6x10-ml.jpg"
+                  class="card-img-top"
+                  alt="Producto 4"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Crema Cara</h5>
+                  <p class="card-text">$15.000 CLP</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-3 mb-4">
+              <div class="card">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmiiZscY-pdICYqo308gsorHr7G9AjxxYzhw&usqp=CAU"
+                  class="card-img-top"
+                  alt="Producto 1"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Rimel</h5>
+                  <p class="card-text">$15.000 CLP</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 mb-4">
+              <div class="card">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1g7loVQxk72jHK6fEl9G0rEz0k6IqWUef9Q&usqp=CAU"
+                  class="card-img-top"
+                  alt="Producto 2"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Vitamina</h5>
+                  <p class="card-text">$15.000 CLP</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 mb-4">
+              <div class="card">
+                <img
+                  src="https://http2.mlstatic.com/D_Q_NP_637206-MLU72274363741_102023-O.webp"
+                  class="card-img-top"
+                  alt="Producto 3"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Serum</h5>
+                  <p class="card-text">$15.000 CLP</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 mb-4">
+              <div class="card">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJYgGhZSU8hGkMC3YxVADQHpWwma9gG6rweQ&usqp=CAU"
+                  class="card-img-top"
+                  alt="Producto 4"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Serum</h5>
+                  <p class="card-text">$15.000 CLP</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container text-center">
+        <p>2023 Web de Alejandro Marin. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+    <script src="Functions/functions.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+  </body>
+</html>

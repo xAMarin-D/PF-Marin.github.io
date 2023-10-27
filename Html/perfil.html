@@ -95,8 +95,9 @@
       </div>
     </nav>
 
-    <div class="container-fluid">
-      <div class="row justify-content-end">
+    <div class="container-fluid margin-dist3">
+      <div class="row">
+        <!-- Div de la imagen de perfil -->
         <div class="col-md-3">
           <div class="perfil-box">
             <div class="circle-outer">
@@ -106,118 +107,129 @@
                 </div>
               </div>
             </div>
-            <h5 class="perfil-name text-center">Nombre de Usuario</h5>
+            <h5 class="perfil-name text-center">Alejandro Marin Astorgad</h5>
+          </div>
+
+          <div class="bg-light mt-3 p-3">
+            <h4 class="centry">Opciones</h4>
+            <button class="btn btn-primary btn-block mt-2 boton-pequeno">
+              Edita tus datos
+            </button>
+            <button class="btn btn-primary btn-block mt-2 boton-pequeno">
+              Contactar a soporte
+            </button>
+            <button class="btn btn-primary btn-block mt-2 boton-pequeno">
+              FAQ
+            </button>
           </div>
         </div>
 
-        <div class="col-md-9"></div>
+        <div class="col-md-9">
+          <!-- Contenido del formulario -->
+          <div
+            class="formulario-box mt-4 p-4 rounded bg-light mx-auto text-center"
+          >
+            <div
+              class="formulario-box mt-4 p-4 rounded bg-light mx-auto text-center"
+            >
+              <div
+                class="d-flex justify-content-between align-items-center mb-3"
+              >
+                <h2 class="mb-0">Perfil</h2>
+                <button type="button" class="btn btn-link">
+                  <i class="fas fa-edit"></i>
+                </button>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="nombre">Nombre</label>
+                  <input
+                    value="Alejandro Enrique"
+                    type="text"
+                    class="form-control"
+                    id="nombre"
+                    disabled
+                  />
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="apellido">Apellido</label>
+                  <input
+                    value="Marin Astorgad"
+                    type="text"
+                    class="form-control"
+                    id="apellido"
+                    disabled
+                  />
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="email">Email</label>
+                  <input
+                    value="ale.marincbz@outlook.es"
+                    type="text"
+                    class="form-control"
+                    id="email"
+                    disabled
+                  />
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="telefono">Teléfono</label>
+                  <input
+                    value="+569 46112359"
+                    type="text"
+                    class="form-control"
+                    id="telefono"
+                    disabled
+                  />
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="direccion">Dirección</label>
+                  <input
+                    value="Calle Nueva #145"
+                    type="text"
+                    class="form-control"
+                    id="direccion"
+                    disabled
+                  />
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="ciudad">Ciudad</label>
+                  <input
+                    value="Cordoba"
+                    type="text"
+                    class="form-control"
+                    id="ciudad"
+                    disabled
+                  />
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="pais">País</label>
+                  <input
+                    value="Argentina"
+                    type="text"
+                    class="form-control"
+                    id="pais"
+                    disabled
+                  />
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="codigo_postal">Código Postal</label>
+                  <input
+                    value="1780000"
+                    type="text"
+                    class="form-control"
+                    id="codigo_postal"
+                    disabled
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
     <!-- Body form & sidebar -->
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-3 bg-light">
-          <h4>Opciones</h4>
-        </div>
-
-        <div class="col-md-9">
-          <div
-            class="formulario-box mt-4 p-4 rounded bg-light mx-auto text-center"
-          >
-            <div class="d-flex justify-content-between align-items-center mb-3">
-              <h2 class="mb-0">Perfil</h2>
-              <button type="button" class="btn btn-link">
-                <i class="fas fa-edit"></i>
-              </button>
-            </div>
-
-            <div class="row">
-              <div class="col-md-6 mb-3">
-                <label for="nombre">Nombre</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="nombre"
-                  readonly
-                  required
-                />
-              </div>
-              <div class="col-md-6 mb-3">
-                <label for="apellido">Apellido</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="apellido"
-                  required
-                  readonly
-                />
-              </div>
-              <div class="col-md-6 mb-3">
-                <label for="email">Email</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="email"
-                  required
-                  readonly
-                />
-              </div>
-              <div class="col-md-6 mb-3">
-                <label for="telefono">Teléfono</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="telefono"
-                  required
-                  readonly
-                />
-              </div>
-              <div class="col-md-6 mb-3">
-                <label for="direccion">Dirección</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="direccion"
-                  required
-                  readonly
-                />
-              </div>
-              <div class="col-md-6 mb-3">
-                <label for="ciudad">Ciudad</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="ciudad"
-                  required
-                  readonly
-                />
-              </div>
-              <div class="col-md-6 mb-3">
-                <label for="pais">País</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="pais"
-                  required
-                  readonly
-                />
-              </div>
-              <div class="col-md-6 mb-3">
-                <label for="codigo_postal">Código Postal</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="codigo_postal"
-                  required
-                  readonly
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <footer class="footer">
       <div class="container text-center">
